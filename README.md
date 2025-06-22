@@ -1,7 +1,7 @@
 # 🎓 [Projekt Zaliczeniowy z Uczenia Maszynowego](https://github.com/makson09K/ML)
 
 **Autorzy:**  
-- Artiom Herashchenko  
+- Artem Herashchenko  
 - Maksym Kudlai  
 - Oleksandr Burmahin  
 
