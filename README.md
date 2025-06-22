@@ -1,4 +1,4 @@
-# 🎓 Projekt Zaliczeniowy z Uczenia Maszynowego
+# 🎓 [Projekt Zaliczeniowy z Uczenia Maszynowego](https://github.com/makson09K/ML)
 
 **Autorzy:**  
 - Artiom Herashchenko  
@@ -8,6 +8,8 @@
 ---
 
 ## 📌 Opis Projektu
+
+
 
 Projekt stanowi kompleksowe opracowanie zagadnień z zakresu uczenia maszynowego. Obejmuje różne techniki – od klasycznych modeli, przez sieci neuronowe, aż po zaawansowane metody optymalizacji.  
 Kod został podzielony na moduły odpowiadające poszczególnym zadaniom i progom zaliczeniowym (3.0 – 5.0).
