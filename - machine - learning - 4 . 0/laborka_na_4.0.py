@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
-from fpdf import FPDF
 
 # Funkcja do bezpiecznego tekstu (usuwanie znaków nieobsługiwanych przez Latin-1)
 def safe(text: str) -> str:
