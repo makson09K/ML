@@ -127,41 +127,4 @@ acc_m = train_manual('momentum')
 acc_a = train_manual('adagrad')
 acc_b = train_manual('both')
 
-# ----------------------------
-# 5) Generacja PDF-raportu
-# ----------------------------
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font("Arial","B",16)
-pdf.cell(0,10,"Sprawozdanie - klasyfikacja Iris", ln=True, align='C')
 
-pdf.set_font("Arial","",12)
-# 0. Analiza eksploracyjna
-pdf.ln(5)
-pdf.multi_cell(0,8,"0. Analiza eksploracyjna danych (pairplot):")
-pdf.image("eda_pairplot.png", w=180)
-
-# 1. Drzewo decyzyjne
-pdf.add_page()
-pdf.multi_cell(0,8,f"1. Drzewo decyzyjne (max_depth=3) - accuracy: {acc_tree:.2f}")
-pdf.image("tree.png", w=180)
-
-# 2. Siec z momentum
-pdf.add_page()
-pdf.multi_cell(0,8,f"2. Siec dwuwarstwowa z optymalizatorem momentum - accuracy: {acc_m:.2f}")
-pdf.image("loss_momentum.png", w=180)
-pdf.image("cm_momentum.png", x=10, w=90)
-
-# 3. Siec z Adagrad
-pdf.add_page()
-pdf.multi_cell(0,8,f"3. Siec dwuwarstwowa z optymalizatorem Adagrad - accuracy: {acc_a:.2f}")
-pdf.image("loss_adagrad.png", w=180)
-pdf.image("cm_adagrad.png", x=10, w=90)
-
-# 4. Siec z momentum + Adagrad
-pdf.add_page()
-pdf.multi_cell(0,8,f"4. Siec dwuwarstwowa z optymalizatorem both - accuracy: {acc_b:.2f}")
-pdf.image("loss_both.png", w=180)
-pdf.image("cm_both.png", x=10, w=90)
-
-pdf.output("sprawozdanie_iris_manual.pdf")
