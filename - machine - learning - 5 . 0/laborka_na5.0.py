@@ -12,7 +12,6 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 import os
 
-# Проверка текущей рабочей директории
 print("Working dir:", os.getcwd())
 
 # ----------------------------
@@ -27,7 +26,6 @@ eda_plot = sns.pairplot(df, hue='target', diag_kind='hist')
 eda_plot.fig.savefig("eda_pairplot.png")
 plt.close('all')
 
-# Подготовка данных
 X = df[data.feature_names].values
 y = df['target'].values
 scaler = StandardScaler()
