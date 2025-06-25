@@ -4,7 +4,7 @@ Uzasadnione, poparte przykładami i referencjami argumenty, dlaczego **zadanie 5
 
 ### 🎓 1. Pełna kontrola nad procesem uczenia
 
-W PyTorch bardzo dokładnie zarządzasz przebiegiem: wywołanie `loss.backward()`, zero-gradientów, aktualizacje wag – każdy krok masz w rękach ([medium.com][1]).
+PyTorch umożliwia manualne zarządzanie całym procesem uczenia: gradientami, optymalizatorami i harmonogramem aktualizacji – nie jesteś ograniczony do wbudowanych rozwiązań .
 W scikit-learn wszystko dzieje się „pod spodem” – nie masz dostępu do szczegółów, co utrudnia głębsze zrozumienie.
 
 ---
@@ -60,7 +60,11 @@ Co więcej, łatwo rozszerzyć kod: GPU, różne architektury, schedulery – rz
 
 ---
 
-📌 **Wniosek:** Zadanie 5 to przeskok od gotowca do zaawansowanego eksperymentu – uczy technik i zrozumienia, bez których praca w nowoczesnym AI nie jest możliwa.
+📌 **WZadanie 5 to przeskok od gotowca do zaawansowanego eksperymentu – uczy technik i zrozumienia, bez których praca w nowoczesnym AI nie jest możliwa.
 
 [1]: https://medium.com/correll-lab/a-primer-on-using-pytorch-optimizers-7a97e0999095?utm_source=chatgpt.com "A primer on using PyTorch Optimizers | by Nikolaus Correll - Medium"
 [2]: https://www.altexsoft.com/blog/pytorch-library/?utm_source=chatgpt.com "PyTorch Pros and Cons - AltexSoft"
+
+![image](https://github.com/user-attachments/assets/17e9bec9-5f18-4ee0-a386-c503cf58843d)
+![image](https://github.com/user-attachments/assets/3888e5f6-0948-4b88-b85b-6123120fb8f3)
+
